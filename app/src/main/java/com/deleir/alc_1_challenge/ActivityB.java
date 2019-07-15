@@ -22,10 +22,13 @@ public class ActivityB extends AppCompatActivity {
         setContentView(R.layout.activity_b);
 
         mProgressLoading = findViewById(R.id.pb_loading);
+
         Toolbar myToolbar = findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
-        myToolbar.setTitle(getString(R.string.app_name));
+        myToolbar.setTitle(getString(R.string.about_alc));
         myToolbar.setTitleTextColor(getResources().getColor(R.color.toolbarText));
+
+        //add back arrow to toolbar
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }

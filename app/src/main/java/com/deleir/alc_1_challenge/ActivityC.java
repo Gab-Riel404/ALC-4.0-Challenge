@@ -17,7 +17,7 @@ public class ActivityC extends AppCompatActivity {
 
         Toolbar myToolbar = findViewById(R.id.my_toolbar2);
         setSupportActionBar(myToolbar);
-        myToolbar.setTitle("My Profile");
+        myToolbar.setTitle(getString(R.string.my_profile));
 
         myToolbar.setTitleTextColor(getResources().getColor(R.color.toolbarText));
         if (getSupportActionBar() != null) {
