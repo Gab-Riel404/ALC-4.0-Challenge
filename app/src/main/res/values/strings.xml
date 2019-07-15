@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ALC 4 Phase 1</string>
+    <string name="welcome">Welcome to ALC 4.0</string>
+    <string name="about_alc">ABOUT ALC</string>
+    <string name="my_profile">MY PROFILE</string>
+    <string name="my_name">Gabriel Asiedu Ntim</string>
+    <string name="track">Track:    Android</string>
+    <string name="country">Country:    Ghana</string>
+    <string name="email">Email:    deleir404@gmail.com</string>
+    <string name="phone">Phone Number:    +233541698002</string>
+    <string name="username">Slack Username:    Gabriel Asiedu Ntim</string>
+</resources>
