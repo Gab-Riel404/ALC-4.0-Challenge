@@ -8,7 +8,7 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 
 public class ActivityC extends AppCompatActivity {
-    private ProgressBar mProgressLoading;
+
     private ImageView imageView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,12 +17,14 @@ public class ActivityC extends AppCompatActivity {
 
         Toolbar myToolbar = findViewById(R.id.my_toolbar2);
         setSupportActionBar(myToolbar);
-        myToolbar.setTitle(getString(R.string.my_profile));
+        getSupportActionBar().setTitle(getString(R.string.toolProfile));
+
 
         myToolbar.setTitleTextColor(getResources().getColor(R.color.toolbarText));
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
+
         myToolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

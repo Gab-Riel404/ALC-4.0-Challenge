@@ -24,9 +24,12 @@ public class ActivityB extends AppCompatActivity {
         mProgressLoading = findViewById(R.id.pb_loading);
 
         Toolbar myToolbar = findViewById(R.id.my_toolbar);
+        myToolbar.setTitle(R.string.toolAbout);
         setSupportActionBar(myToolbar);
-        myToolbar.setTitle(getString(R.string.about_alc));
-        myToolbar.setTitleTextColor(getResources().getColor(R.color.toolbarText));
+        //getSupportActionBar().setTitle(getString(R.string.about_alc));
+        //getSupportActionBar(getColor(R.color.toolbarText));
+        //myToolbar.setTitle(getString(R.string.about_alc));
+        //myToolbar.setTitleTextColor(getResources().getColor(R.color.toolbarText));
 
         //add back arrow to toolbar
         if (getSupportActionBar() != null) {
