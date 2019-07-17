@@ -2,10 +2,13 @@ package com.deleir.alc_1_challenge;
 
 import android.graphics.Bitmap;
 import android.net.http.SslError;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.webkit.SslErrorHandler;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -26,6 +29,13 @@ public class ActivityB extends AppCompatActivity {
         Toolbar myToolbar = findViewById(R.id.my_toolbar);
         myToolbar.setTitle(R.string.toolAbout);
         setSupportActionBar(myToolbar);
+
+        if (Build.VERSION.SDK_INT >= 21) {
+            Window window = getWindow();
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+            window.setStatusBarColor(getResources().getColor(R.color.colorPrimaryDark));
+        }
         //getSupportActionBar().setTitle(getString(R.string.about_alc));
         //getSupportActionBar(getColor(R.color.toolbarText));
         //myToolbar.setTitle(getString(R.string.about_alc));

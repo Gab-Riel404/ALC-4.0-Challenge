@@ -9,6 +9,6 @@
     <string name="track">Track:    Android</string>
     <string name="country">Country:    Ghana</string>
     <string name="email">Email:    deleir404@gmail.com</string>
-    <string name="phone">Phone Number:    +233541698002</string>
-    <string name="username">Slack Username:    Gabriel Asiedu Ntim</string>
+    <string name="phone">Phone:    +233541698002</string>
+    <string name="username">Slack Name:    Gabriel Asiedu Ntim</string>
 </resources>
